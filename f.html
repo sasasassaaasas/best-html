@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit List</title>
+    <style>
+        /* Style the entire list */
+        ul {
+            background-color: #f0f0f0; /* light gray background */
+            padding: 20px; /* add padding to the list */
+            margin: 20px; /* add margin to the list */
+        }
+        
+        /* Style a specific list item */
+        ul li:nth-child(3) {
+            background-color: #ccc; /* darker gray background */
+        }
+        
+        /* Style the text of each list item */
+        ul li span {
+            background-color: #333; /* darkest gray background */
+            padding: 5px; /* add padding to the text */
+            color: #fff; /* white text color */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><span>Apple</span></li>
+        <li><span>Banana</span></li>
+        <li><span>Cherry</span></li>
+        <li><span>Date</span></li>
+        <li><span>Elderberry</span></li>
+    </ul>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <style>
+        /* Style the entire list */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        /* Style even list items */
+        ul li:nth-child(even) {
+            background-color: #87CEEB; /* light blue background */
+        }
+        
+        /* Style odd list items */
+        ul li:nth-child(odd) {
+            background-color: #ADD8E6; /* dark blue background */
+        }
+        
+        /* Style completed tasks */
+        ul li.completed {
+            background-color: #ccc; /* gray background */
+            text-decoration: line-through;
+        }
+        
+        /* Style task icons */
+        ul li span.icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+        
+        /* Style completed task icons */
+        ul li.completed span.icon {
+            background-image: url('checked.png'); /* replace with your icon file */
+        }
+        
+        /* Style incomplete task icons */
+        ul li:not(.completed) span.icon {
+            background-image: url('unchecked.png'); /* replace with your icon file */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><span class="icon"></span>Task 1</li>
+        <li class="completed"><span class="icon"></span>Task 2 &#10007;</li>
+        <li><span class="icon"></span>Task 3</li>
+        <li class="completed"><span class="icon"></span>Task 4 &#10007;</li>
+        <li><span class="icon"></span>Task 5</li>
+    </ul>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definition List</title>
+    <style>
+        /* Style the definition list */
+        dl {
+            background-color: #f0f0f0; /* light gray background */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        /* Style the definition terms */
+        dt {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        /* Style the definition descriptions */
+        dd {
+            margin-bottom: 20px;
+        }
+        
+        /* Style the ordered list */
+        ol {
+            list-style: upper-roman;
+            margin-top: 20px;
+        }
+        
+        /* Style the ordered list items */
+        ol li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>A high-level, dynamic, and interpreted programming language</dd>
+    </dl>
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+        <li>Build a website</li>
+    </ol>
+</body>
+</html>
